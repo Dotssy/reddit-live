@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;600&display=swap');
+
+* {
+	padding: 0;
+	outline: 0;
+}
+
+body {
+	background: #D0D0D0;
+}
+
+.thread-list ul li {
+	list-style: none;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.thread-list > h1 {
+	text-align: center;
+	font-family: 'Mukta', sans-serif;
+	font-size: 34px;
+	font-weight: 600;
+	transition: 0.5s ease;
+	color: #fff;
+}
+
+.thread-list form {
+	display: flex;
+	justify-content: center;
+}
+
+.thread-list form #text {
+	margin-right: 10px;
+	padding: 10px;
+	width: 250px;
+	border-radius: 6px;
+	border: 1px solid white;
+	font-family: 'Mukta', sans-serif;
+	font-weight: 300;
+}
+
+.thread-list form #text:focus {
+	border: 1px solid gray;
+	outline: none;
+}
+
+.thread-list form #submit {
+	width: 100px;
+	border-radius: 6px;
+	outline: none;
+	border-color: #f7f7f7;
+	cursor: pointer;
+	font-family: 'Mukta', sans-serif;
+	font-weight: 600;
+}
+
+.thread-card {
+	background: #f6f6f6;
+	padding: 15px;
+	border: 1px solid #BEBEBE;
+	border-radius: 10px;
+	background: url(./img/reddit-logo-bg1.png) no-repeat right -30px bottom -50px;
+	background-color: #ffffff;
+	margin-bottom: 15px;
+	box-shadow: 8px 8px 15px rgba(0,0,0,0.3); /* Параметры тени */
+}
+
+.thread-info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.thread-score {
+	font-family: 'Mukta', sans-serif;
+}
+
+.thread-author {
+	font-family: 'Mukta', sans-serif;
+}
+
+.thread-score span,
+.thread-author span {
+	font-weight: 600;
+}
+
+.thread-title a {
+	font-family: 'Mukta', sans-serif;
+	font-weight: 300;
+	font-size: 17px;
+	text-decoration: none;
+	color: #7D7D7D;
+	transition: .5s ease all;
+}
+
+.thread-title a:hover {
+	text-decoration: underline;
+	color: #B2B2B2;
+}
+
+.thread-title h4 {
+	display: inline;
+}
+
+.error-msg {
+	background: #ffffff;
+	max-width: 550px;
+	height: 200px;
+	margin: 0 auto;
+	display: flex;
+	padding: 25px;
+	border-radius: 9px;
+	border: 1px solid #BEBEBE;
+}
+
+.error-msg h4 {
+	font-family: 'Mukta', sans-serif;
+	margin: auto;
+	font-size: 20px;
+}
